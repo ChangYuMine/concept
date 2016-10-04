@@ -2,7 +2,10 @@ package tw.com.google.www_concept;
 
 //0828
 /*1.定義那些類別符合規格。
-  2.用證照觀念來思考。*/
+  2.用證照觀念來思考。
+  3.多型的觀念
+  0828_2_1hr8min50sec
+ 					*/
 
 public class Interface {
 

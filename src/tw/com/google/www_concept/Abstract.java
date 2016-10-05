@@ -1,7 +1,7 @@
 package tw.com.google.www_concept;
 
 /*
- 0828_3_1hr:抽象類別
+ 抽象類別:0828_3_1hr
  */
 
 public class Abstract {

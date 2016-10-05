@@ -1,5 +1,7 @@
 package tw.com.google.www_concept;
 
+import java.io.IOException;
+
 import javax.management.JMException;
 
 import jdk.internal.org.xml.sax.SAXException;
@@ -42,6 +44,10 @@ public class Exceptions2 {
 		
 		{System.out.println("又錯了!!");}
 		//已經在Brad421宣告例外，所以在這邊要處理。
+		
+		Brad422 obj2 = new Brad422();
+		
+//		obj2.m1(1);
 	}
 
 }
@@ -77,3 +83,38 @@ class Brad421{
 			}
 	}
 }
+
+class Brad422 extends Brad421 {	
+
+	void m1(int n)throws JMException, SAXException{
+	/*父類別有例外處理，override的子類別可先拋出例外處理，
+	 但子類別例外處理須比父類別"範圍小"以及"數量少";0828_5*/		
+//		super.m1(n);
+		
+		int a=10,b=3;
+		
+		try{
+			
+		int c = a/b;
+		
+		}catch (RuntimeException e){
+			
+			System.out.println("抓到了!!");
+		
+		}finally{
+			
+			System.out.println("遊戲結束!!");
+		}
+		
+		System.out.println("馬照跑!!舞照跳!!");
+	};
+}
+/*try catch的三種型態：
+
+a.try{ }catch( ){ }：一般捕捉例外
+
+b.try{ }catch( ){ }finally{ }：確保結構的完整性，到finally即會結束。
+
+c.try{ }finally{ }：沒有要捕捉例外，但在離開前仍會執行finally。
+
+;0828_5_12min30sec*/

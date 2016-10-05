@@ -11,8 +11,8 @@ import javax.swing.JPanel;
 import javax.swing.JTextArea;
 
 //0828
-/*複習進度：0828_2_1hr6min30sec
-		 0828_2_1hr5min*/
+/*複習進度：0828_3_44min
+		 0828_3_43min*/
 		 
 public class Windows$1 extends JFrame implements ActionListener{
 

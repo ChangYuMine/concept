@@ -4,7 +4,7 @@ public class Equals {
 
 	public static void main(String[] args) {
 		
-		//觀念：0828_2_30min20sec
+		//觀念：equals，比對字串;0828_2_30min20sec
 		
 		String a = "john";
 		

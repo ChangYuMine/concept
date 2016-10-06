@@ -17,7 +17,7 @@ public class Interface {
 		 
 		 john3 j3 = new john3();//輪胎2
 		 
-		 j1.m1(j3);
+		 j1.m1(j2);
 		 
 		 //觀念：0828_1_1hr1min
 		 
@@ -32,7 +32,7 @@ interface john1{
 	void m2();
 	
 	//需宣告方法，但不能有實作。
-	//例：你須考過證照，才能說是該職業職人，但不能說考證照的方法
+	//例：你須考過證照，才能說是該職業職人，但不能說考證照的方法。
 	//觀念：0828_1_47min40sec
 	
 }
@@ -47,9 +47,11 @@ class john2 implements john1{
 		
 	}
 	//class john2實作interface john1。
-	//1.當john2出現"{}"時，已定義、宣告該類別。
+	/*1.當john2出現"{}"時，已定義、宣告該類別，
+		所以須有實作方法(m1、m2)。*/
 	/*2.java的介面無存取修飾字，一律是public，
-	 	故需在類別方法前加上public。*/
+	 	故需在類別方法前加上public
+	 	(存取修飾字不能比介面小)。*/
 	//觀念：0828_1_49min30sec
 	
 	void m3(){System.out.println("john2:m3");
@@ -68,8 +70,7 @@ class john3 implements john1{
 	}
 	
 	void m4(){System.out.println("john3:m4");
-		
-		
+				
 	}
 }
 
@@ -80,7 +81,7 @@ class john4{
 		obj1.m1();
 		
 		obj1.m2();
-	//對立思考：為何上述john2和john3為何不各自獨立實作就好??
+	//對立思考：為何上述類別john2和john3為何不各自獨立實作就好??
 	//介面實作目的在於傳遞方法參數給john4的m1方法
 	//觀念：0828_1_57min20sec
 				

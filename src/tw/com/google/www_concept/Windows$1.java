@@ -16,7 +16,7 @@ import javax.swing.JTextArea;
 		 
 public class Windows$1 extends JFrame implements ActionListener{
 
-	/*Windows is a(是) JFrame
+	/*Windows$1 is a(是) JFrame
 	(也可繼續父類別續推定義：例：is a Window，)，
 	is a是繼承關係，是一種"多型"的觀念*/
 	
@@ -31,6 +31,7 @@ public class Windows$1 extends JFrame implements ActionListener{
 	
 	public Windows$1(){
 	//語法上可以繼承父類別建構式，但實作上要初始化視窗物件，故仍需定義建構式
+	//觀念：0828_1_19min20sec
 		
 		super("萬年曆");
 		//super父類別建構式：JFrame(String title)
@@ -58,7 +59,7 @@ public class Windows$1 extends JFrame implements ActionListener{
 		
 		setLayout(new BorderLayout());
 		//觀念：0828_1_1hr26min
-		//觀念：0828_1_1hr29min(第二種室內設計師概念)
+		//觀念：0828_1_1hr29min(第二種室內設計師概念，才能有"隔間"配置)
 		
 		JPanel top = new JPanel
 				
@@ -131,8 +132,9 @@ public class Windows$1 extends JFrame implements ActionListener{
 	public static void main(String[] args) {
 		
 		new Windows$1();
-		//static直接載入觀念，做出Windows類別的物件實體。	
-	
+		/*static直接載入觀念，做出Windows$1類別的物件實體。	
+		  0828_1_23min20sec*/
+					
 	}
 	
 	class MyListener implements ActionListener{

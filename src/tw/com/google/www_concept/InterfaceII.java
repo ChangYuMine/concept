@@ -6,6 +6,9 @@ public class InterfaceII {
 
 	public static void main(String[] args) {
 		
+		final int a = 10;
+		//區域變數		
+		
 		System.out.println(Brad6.c);
 		/*觀念：Brad5的C值是static
 			

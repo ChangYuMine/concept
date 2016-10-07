@@ -22,7 +22,7 @@ public class Transformation {
 		obj2.m1();
 		
 		obj3.m1();
-		/*方法來自Brad401，但實作來自Brad402
+		/*方法來自Brad401定義，但實作來自Brad402(物件實體)
 		;0828_4_8min50sec*/
 		
 

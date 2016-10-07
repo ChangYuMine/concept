@@ -55,6 +55,6 @@ class Brad393 extends Brad392{
 final class Brad394{
 	
 	/*與抽象類別不會並存，final類別沒有繼承關係，即到我這裡為止。
-	0828_4*/	
+	，例：string;0828_4*/	
 	
 }

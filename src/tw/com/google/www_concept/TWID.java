@@ -50,10 +50,61 @@ public class TWID {
 		}
 		
 		static boolean isOK(String testID){
-		//0827_2_16min30sec			
-			return true;
-			//回傳驗證正確與否			
+		//0827_2_16min30sec
+			
+			boolean ret = false; 
+			
+			if(testID.matches("^[A-Z][12][0-9]{8}$")){
+			//驗證條件：1.長度須為10 ，	2.字母A-Z需大寫	 ，3.第二碼需為1或2，4.第3-10碼須為0-9	
+			/*正規表示法：
+			 if(test.matches("^A123456789$"))
+			  上式比對的是整個字串
+			 if(test.matches("^[A-Z][12][0-9]{8}$"))
+			 
+			 1.[]可用範圍性或分別列舉或並存
+			 2.{}代表字元數出現的次數，如{8}，只會出現8個數字。
+			 3.字首如果是固定字元，可不用加[]，如手機號碼。
+			 */
+				
+				ret = true;
+				
+			}else{
+				
+				ret = false;
+				
+			}
+			return ret;
+			//回傳驗證正確與否
+				
 		}
+		
+		//static boolean preCheck(String testID){		
+		//0827_2_23min
+			
+			//boolean isOK = false;
+			//預設布林值為false			
+			
+			//if(testID.length()==10){
+			//檢查字串長度是否為10
+			//0827_2_36min50sec
+								
+				//if(testID.charAt(1)=='1'||testID.charAt(1)=='2'){
+				//比對首碼是否為1或2
+					
+					
+					//抽出第一碼，testID.charAt(0)
+					//是否為A-Z在字串中；.indexof(A-Z);
+					//0827_2_39min；				
+					
+				//}
+			
+			//}
+			//只要上述if式未通過檢查，即直接回傳預設布林值(false)
+			//用正規表示法前
+//			
+//			return isOK;
+//			
+//		}
 		
 		
 

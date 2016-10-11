@@ -49,7 +49,7 @@ public class TWID {
 			//參考身分證維基百科			
 		}
 		
-		boolean isOK(){
+		static boolean isOK(String testID){
 		//0827_2_16min30sec			
 			return true;
 			//回傳驗證正確與否			

@@ -66,7 +66,40 @@ public class TWID {
 			 3.字首如果是固定字元，可不用加[]，如手機號碼。
 			 */
 				
-				ret = true;
+			String check="ABCDEFGHJKLMNPQRSTUVXYWZIO";
+			//0827_3_8min50sec
+			
+			int a = check.indexOf(testID.charAt(0))+10;
+			/*利用indexof和charAt取得字母所在位置，再加上10，
+			      即可取得身分證字母所代表的數字；0827_3_10min*/
+			
+			int a1 = a/10;
+			
+			int a2 = a%10;
+			//把英文字母數字代表拆開，例：A拆成1跟0，以符合驗算公式。
+			
+			int a3 = Integer.parseInt(testID.substring(1, 2));
+			//Integer.parseInt：	0827_3_17min30sec
+			//substring：0827_3_19min
+			int a4 = Integer.parseInt(testID.substring(2, 3));
+			int a5 = Integer.parseInt(testID.substring(3, 4));
+			int a6 = Integer.parseInt(testID.substring(4, 5));
+			int a7 = Integer.parseInt(testID.substring(5, 6));
+			int a8 = Integer.parseInt(testID.substring(6, 7));
+			int a9 = Integer.parseInt(testID.substring(7, 8));
+			int a10 = Integer.parseInt(testID.substring(8, 9));
+			int a11 = Integer.parseInt(testID.substring(9, 10));
+			
+			int total = a1*1 + a2*9 + a3*8 + a4*7 
+					
+						+ a5*6 + a6*5 + a7*4 + a8*3
+						
+						+ a9*2 + a10*1 + a11*1;
+			//套用身分證計算公式
+			/*複習進度：0827_3_	33min20sec
+					 0827_PM_1_28min*/
+				
+			ret = true;
 				
 			}else{
 				

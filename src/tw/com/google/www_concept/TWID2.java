@@ -21,7 +21,7 @@ public class TWID2 {
 		
 //		static方法
 		
-		if(TWID.isOK("N203536243")){
+		if(TWID.isOK("A203536243")){
 			
 			System.out.println("OK");
 			

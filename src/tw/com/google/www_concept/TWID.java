@@ -10,6 +10,29 @@ public class TWID {
 		/*(TWid物件類別中存在了字串id屬性，封裝(private)後只能透過建構式；
 		 0827_1_56min40sec*/
 		
+		TWID(){
+			
+			
+		}
+				
+		TWID(boolean gender){
+			
+			
+		}
+		
+		TWID(int area){
+			
+			
+		}
+//		建構式命名限制：0827_3_40min50sec
+		
+		TWID(boolean gender,int area){
+			
+			
+		}
+//		方法2：0827_3_39min；身份證字號產生器	
+		
+		
 		TWID(String id){
 			
 //			System.out.println("我是建構式");
@@ -95,10 +118,10 @@ public class TWID {
 						+ a5*6 + a6*5 + a7*4 + a8*3
 						
 						+ a9*2 + a10*1 + a11*1;
+			
+			ret=total%10==0;
 			//套用身分證計算公式
-			/*複習進度：0827_3_	33min20sec
-					 0827_PM_1_28min*/
-				
+							
 			ret = true;
 				
 			}else{
